@@ -41,7 +41,9 @@ h1, h2 {
   margin: 0 auto;
   width: 50%;
   background: var(--teal);
+  border-radius: 20%
 }
+
 .logo {
   display: inline-flex;
   text-decoration: none;

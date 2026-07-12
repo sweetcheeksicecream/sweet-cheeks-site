@@ -60,7 +60,6 @@ h1, h2 {
   background: var(--teal);
   color: #fff;
   position: relative;
-  padding-bottom: 3.5rem;
 }
 
 .hero-inner {

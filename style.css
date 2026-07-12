@@ -40,7 +40,7 @@ h1, h2 {
 .logobox {
   margin: 0 auto;
   background: var(--cream);
-  border-radius: 20px
+  border-radius: 20px;
   padding: 1.5rem 1rem;
 }
 

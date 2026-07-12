@@ -37,7 +37,11 @@ h1, h2 {
 .site-header {
   padding: 1.5rem 0;
 }
-
+.logobox {
+  margin: 0 auto;
+  width: 50%;
+  background: var(--teal);
+}
 .logo {
   display: inline-flex;
   text-decoration: none;

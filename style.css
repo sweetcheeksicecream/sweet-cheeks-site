@@ -190,7 +190,7 @@ h1, h2 {
 .signup {
   background: var(--coral);
   position: relative;
-  padding: 0 0 4rem;
+  padding: 4rem 0;
 }
 
 .ticket {
@@ -201,7 +201,6 @@ h1, h2 {
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
   position: relative;
   overflow: hidden;
-  margin: auto auto;
 }
 
 .ticket h2 {

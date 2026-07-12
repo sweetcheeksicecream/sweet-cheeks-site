@@ -38,7 +38,7 @@ h1, h2 {
   padding: 1.5rem 0;
 }
 .logobox {
-  margin: 0 auto;
+  margin: 1rem auto;
   background: var(--cream);
   border-radius: 20px;
   padding: 1.5rem 1rem;

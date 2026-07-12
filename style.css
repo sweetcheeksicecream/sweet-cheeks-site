@@ -39,9 +39,9 @@ h1, h2 {
 }
 .logobox {
   margin: 0 auto;
-  width: 50%;
   background: var(--cream);
-  border-radius: 20%
+  border-radius: 20px
+  padding: 1.5rem 1rem;
 }
 
 .logo {

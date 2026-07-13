@@ -129,7 +129,7 @@ h1, h2 {
 }
 
 .eyebrow-light {
-  color: var(--coral-dark);
+  color: var(--teal);
 }
 
 .hero h1 {
@@ -290,6 +290,7 @@ h1, h2 {
 
 .signup-success {
   animation: fade-in 0.35s ease;
+  text-align: center;
 }
  
 @keyframes fade-in {

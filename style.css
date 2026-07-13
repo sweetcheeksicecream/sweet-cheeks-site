@@ -227,6 +227,12 @@ h1, h2 {
   text-align: center;
 }
 
+.location .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .location h2 {
   font-size: 1.6rem;
   margin-bottom: 0.6rem;

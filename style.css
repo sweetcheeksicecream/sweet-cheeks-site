@@ -60,6 +60,12 @@ h1, h2 {
   min-height: 480px;
 }
 
+.hero .wrap,
+.signup .wrap,
+.location .wrap {
+  width: 100%;
+}
+
 /* Header */
 .site-header {
   padding: 1.5rem 0;

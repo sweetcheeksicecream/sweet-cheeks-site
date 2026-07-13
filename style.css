@@ -123,8 +123,8 @@ h1, h2 {
 }
 
 .hero-sub {
-  font-size: 2rem;
-  max-width: 42ch;
+  font-size: 2.3rem;
+  max-width: 100ch;
   margin: 0 auto 2rem;
   color: rgba(255,255,255,0.92);
 }

@@ -51,13 +51,22 @@
             Go to: Audience > Signup forms > Embedded forms in Mailchimp,
             choose "Naked" (easiest to style) and copy the <form> block in.
           -->
-          <form id="signup-form" class="signup-form">
+          <form id="signup-form" class="signup-form" action="https://eocampaign1.com/form/4326180a-7e58-11f1-a8c8-cdc4d8594584" method="post" target="eo-hidden-frame">
             <label for="email">Email address</label>
             <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <div aria-hidden="true" class="hp-field">
+                <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="off">
+            </div>
             <button type="submit">Sign me up</button>
           </form>
         </div>
+          <div id="signup-success" class="signup-success" hidden>
+            <p class="eyebrow eyebrow-light">You're in!</p>
+            <h2>Scoop's on the way</h2>
+            <p class="section-sub">Thanks for signing up — we'll email you the second the window opens.</p>
+          </div>
       </div>
+    <iframe name="eo-hidden-frame" class="hidden-frame" title="signup submission" aria-hidden="true"></iframe>
     </section>
     <!-- LOCATION -->
   <section id="location" class="location">
@@ -94,6 +103,21 @@
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const signupForm = document.getElementById('signup-form');
+    const signupDefault = document.getElementById('signup-default');
+    const signupSuccess = document.getElementById('signup-success');
+ 
+    signupForm.addEventListener('submit', () => {
+      // Basic HTML5 validation (required email field) already ran by this point.
+      // The form still submits normally into the hidden iframe; we optimistically
+      // swap in the custom success message right away since there's no reliable
+      // way to read a response back from the cross-origin iframe.
+      setTimeout(() => {
+        signupDefault.hidden = true;
+        signupSuccess.hidden = false;
+      }, 400);
+    });
   </script>
 </body>
 </html>

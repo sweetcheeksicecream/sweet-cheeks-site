@@ -386,3 +386,16 @@ h1, h2 {
     white-space: normal;
   }
 }
+
+.map-embed {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.map-embed iframe {
+  display: block;
+}

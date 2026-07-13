@@ -384,6 +384,12 @@ h1, h2 {
   .signup-form input[type="email"] {
     max-width: none;
   }
+
+.signup-error {
+  color: #B3261E;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
   .site-header-inner {
     flex-direction: column;
     align-items: center;
@@ -433,3 +439,5 @@ h1, h2 {
 .hidden-frame {
   display: none;
 }
+
+

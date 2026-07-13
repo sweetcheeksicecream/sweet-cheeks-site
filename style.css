@@ -288,6 +288,15 @@ h1, h2 {
   margin-bottom: 0.5rem;
 }
 
+.signup-success {
+  animation: fade-in 0.35s ease;
+}
+ 
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .signup-form {
   display: flex;
   gap: 0.75rem;

@@ -420,3 +420,15 @@ h1, h2 {
   font-size: 1.6rem;
   margin-bottom: 0.6rem;
 }
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.hidden-frame {
+  display: none;
+}

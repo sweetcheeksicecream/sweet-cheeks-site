@@ -36,6 +36,7 @@ body {
   color: var(--cocoa);
   background: var(--cream);
   line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 h1, h2 {
@@ -48,6 +49,15 @@ h1, h2 {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+.hero,
+.signup,
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
 }
 
 /* Header */
@@ -123,8 +133,9 @@ h1, h2 {
 }
 
 .hero-sub {
-  font-size: 2.3rem;
-  max-width: 100ch;
+  font-size: 1.15rem;
+  max-width: none;
+  white-space: nowrap;
   margin: 0 auto 2rem;
   color: rgba(255,255,255,0.92);
 }
@@ -359,5 +370,13 @@ h1, h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .hero,
+  .signup,
+  .location {
+    min-height: auto;
+  }
+  .hero-sub {
+    white-space: normal;
   }
 }
